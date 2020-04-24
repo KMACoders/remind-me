@@ -1,0 +1,64 @@
+.MenuFilters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: gray;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 50px;
+    border: 1px solid rgb(15, 129, 206);
+    margin-right: 2px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    background-color: rgb(15, 129, 206); 
+    color: white;
+}
+
+.items-left {
+    font-size: 13px;
+    margin-right: auto;
+}
+
+.clear {
+    margin-left: 2vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(15, 129, 206);
+
+}
+.clear:focus {
+    outline: none;
+}
+.clear:hover {
+    background-color: rgb(15, 129, 206); 
+    color: white;
+}
+
+.active {
+    background-color: rgb(15, 129, 206); 
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .MenuFilters {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .items-left {
+        margin: 10px auto;
+    }
+    .clear {
+        margin-left: 12px;
+    }
+  }
+

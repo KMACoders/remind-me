@@ -1,0 +1,23 @@
+.TodoList {
+  width: 40%;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .TodoList {
+      width: 50%;
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .TodoList {
+      width: 70%;
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .TodoList {
+      width: 85%;
+    }
+}

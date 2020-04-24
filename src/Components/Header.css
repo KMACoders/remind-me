@@ -1,0 +1,26 @@
+.Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Header .title{
+    font-size: 60px;  
+    color: rgb(15, 129, 206); 
+}
+
+.Header i {
+    color: rgb(6, 224, 42); 
+    margin-right: 20px;
+    font-size: 45px;
+}
+
+@media only screen and (max-width: 500px) {
+    .Header .title {
+      font-size: 35px;
+    }
+
+    .Header i {
+        font-size: 28px;
+        margin-right: 10px;
+    }
+  }
