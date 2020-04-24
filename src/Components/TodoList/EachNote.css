@@ -54,9 +54,11 @@ input[type=checkbox]:checked:disabled + label:before {
     display: flex;
     align-items: center;
 }
+
 .item label.content{
     padding: 15px 5px;
 }
+
 .item i {
     display: none;
     margin-left: auto;
