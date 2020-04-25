@@ -9,9 +9,9 @@
 }
 
 .Header i {
-    color: rgb(6, 224, 42); 
+    color: MediumSeaGreen; 
     margin-right: 20px;
-    font-size: 45px;
+    font-size: 51px;
 }
 
 @media only screen and (max-width: 500px) {

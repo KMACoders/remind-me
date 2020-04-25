@@ -5,7 +5,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className="Header">
-                <i className="fas fa-calendar-check"/>
+                <i className="fas fa-check"></i>
                 <h1 className="title">{this.props.title}</h1>
             </div>
         );
