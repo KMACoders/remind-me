@@ -41,7 +41,6 @@ class Todolist extends React.Component {
     }
 
     changeFilter(filter) {
-        console.log("Change filter")
         this.setState({
             filter: filter
         });
@@ -94,8 +93,10 @@ class Todolist extends React.Component {
     render() {
         var that = this;
         var listNote;
+        var noTask;
         // render EachNote follow by filter
         if (this.state.filter === "ALL") {
+            noTask = <p className="empty"><i className="far fa-sticky-note"></i>No task</p>;
             listNote = this.state.data
                 .map(function (item, index) {
                     return (
@@ -110,6 +111,7 @@ class Todolist extends React.Component {
                     );
                 })
         } else if (this.state.filter === "ACTIVE") {
+            noTask = <p className="empty"><i className="far fa-sticky-note"></i>No "doing" task</p>;
             listNote = this.state.data
                 .filter(function (item) {
                     return item.isCompleted === false
@@ -132,6 +134,7 @@ class Todolist extends React.Component {
                     );
                 })
         } else if (this.state.filter === "COMPLETED") {
+            noTask = <p className="empty"><i className="far fa-sticky-note"></i>No "done" task</p>;
             listNote = this.state.data
                 .filter(function (item) {
                     return item.isCompleted === true
@@ -157,7 +160,7 @@ class Todolist extends React.Component {
                     createNote={this.createNote}
                     data={this.state.data}
                 />
-                {listNote}
+                {listNote.length === 0 ? noTask : listNote}
                 <MenuFilter
                     filter={this.state.filter}
                     changeFilter={this.changeFilter}

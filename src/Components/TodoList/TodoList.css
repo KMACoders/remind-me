@@ -2,6 +2,17 @@
   width: 40%;
   text-align: center;
 }
+
+.TodoList .empty {
+  font-size: 14px;
+  margin: 40px 0px;
+  color: gray;
+}
+
+.TodoList .empty i{
+  margin-right: 5px;
+}
+
 @media only screen and (max-width: 1024px) {
   .TodoList {
       width: 50%;
